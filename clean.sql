@@ -1,0 +1,16 @@
+PRAGMA foreign_keys = OFF;
+DROP TABLE IF EXISTS Authors;
+DROP TABLE IF EXISTS Books;
+DROP TABLE IF EXISTS Customers;
+DROP TABLE IF EXISTS Orders;
+DROP TRIGGER IF EXISTS Buy;
+DROP INDEX IF EXISTS author_name_search;
+DROP INDEX IF EXISTS book_title_search;
+DROP INDEX IF EXISTS book_quantity_search;
+DROP INDEX IF EXISTS book_isbn_search;
+DROP INDEX IF EXISTS book_price_search;
+DROP INDEX IF EXISTS customer_search;
+DROP INDEX IF EXISTS order_customer_search;
+DROP INDEX IF EXISTS order_book_search;
+DROP VIEW IF EXISTS OrderDetails;
+PRAGMA foreign_keys = ON;
